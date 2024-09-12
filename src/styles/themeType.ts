@@ -26,6 +26,11 @@ declare module 'styled-components' {
       background: string;
       main: string;
       main2: string;
+      active: string;
+      hover: string;
+      disable: string;
+      placeholder: string;
+      inputFocus: string;
     };
     fontSize: {
       headingL: string;

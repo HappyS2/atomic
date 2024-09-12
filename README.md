@@ -3,6 +3,7 @@
 hook - use(카멜 케이스) [ ex) usePassGood ]
 폴더 - (카멜 케이스) [ ex) passGood ]
 파일 - (파스칼 케이스) [ ex) PassGood ]
+이미지 파일 저장형식 - (케밥 케이스) [ ex) pass-good]
 
 ```
 src
@@ -33,6 +34,12 @@ src
 └── null         	     #  미정
     └── ...
 ```
+
+## 아토믹-아톰
+
+src -> components -> atoms 폴더안에
+icons, logo, text관리
+text는 as를 사용하여 태그변경을 할 수 있음
 
 ## Atoms
 

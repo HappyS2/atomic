@@ -1,25 +1,15 @@
 import { DefaultTheme } from 'styled-components';
 
 /*
-
 	// 약어정리
 	btn = button
 	sel = select
 	clr = color
-
-	// border-gradient 사용시 3가지 css 사용
-	border: 10px solid transparent;
-	[ 각도지정가능 ]
-	border-image: linear-gradient(135deg, ${(props) => props.theme.colors.selBorderImgColor});
-	border-image-slice: 1;
-
-  // GRAY SCALE (#FFF ~ #2F3233)
-
 */
 
 // 테마에 관계없는 값
 
-const fontSizeTheme = {
+const fontSize = {
   headingL: '6rem',
   headingM: '4rem',
   headingS: '2.5rem',
@@ -29,7 +19,7 @@ const fontSizeTheme = {
   normal: '1.4rem',
 };
 
-const lineHeightTheme = {
+const lineHeight = {
   lineHeightHeadingL: '10rem',
   lineHeightHeadingM: '6rem',
   lineHeightHeadingS: '3rem',
@@ -39,7 +29,7 @@ const lineHeightTheme = {
   lineHeightNormal: '2.5rem',
 };
 
-const fontWeightTheme = {
+const fontWeight = {
   Black: 900,
   extraBold: 800,
   bold: 700,
@@ -82,8 +72,14 @@ const colors = {
   // 메인
   MAIN: '#2b2969',
   MAIN2: '#d71e2a',
-  // 알림
-  NOTIFY: '#FF693A',
+  // 활성, 비활성화 색
+  ACTIVE: '#5b59a1',
+  HOVER: '#2b2969',
+  DISABLE: '#A1A1A1',
+  // ::placeholder
+  PLACEHOLDER: '#B0B0B0',
+  // input포커스
+  INPUTFOCUS: '#BABABA',
 } as const;
 
 const theme: DefaultTheme = {
@@ -111,10 +107,15 @@ const theme: DefaultTheme = {
     background: colors.BACKGROUND,
     main: colors.MAIN,
     main2: colors.MAIN2,
+    active: colors.ACTIVE,
+    hover: colors.HOVER,
+    disable: colors.DISABLE,
+    placeholder: colors.PLACEHOLDER,
+    inputFocus: colors.INPUTFOCUS,
   },
-  fontSize: fontSizeTheme,
-  lineHeight: lineHeightTheme,
-  fontWeight: fontWeightTheme,
+  fontSize: fontSize,
+  lineHeight: lineHeight,
+  fontWeight: fontWeight,
 };
 
 // ==============================
@@ -148,6 +149,14 @@ const darkcolors = {
   // 메인
   MAIN: '#5a55e2',
   MAIN2: '#d71e2a',
+  // 활성, 비활성화 색
+  ACTIVE: '#8481c7',
+  HOVER: '#5f5d85',
+  DISABLE: '#b9bbc2',
+  // ::placeholder
+  PLACEHOLDER: '#9798a0',
+  // input포커스
+  INPUTFOCUS: '#E2E2E2',
 } as const;
 
 const darkTheme: DefaultTheme = {
@@ -175,10 +184,15 @@ const darkTheme: DefaultTheme = {
     background: darkcolors.BACKGROUND,
     main: darkcolors.MAIN,
     main2: darkcolors.MAIN2,
+    active: darkcolors.ACTIVE,
+    hover: darkcolors.HOVER,
+    disable: darkcolors.DISABLE,
+    placeholder: darkcolors.PLACEHOLDER,
+    inputFocus: darkcolors.INPUTFOCUS,
   },
-  fontSize: fontSizeTheme,
-  lineHeight: lineHeightTheme,
-  fontWeight: fontWeightTheme,
+  fontSize: fontSize,
+  lineHeight: lineHeight,
+  fontWeight: fontWeight,
 };
 
 export { theme, darkTheme };
