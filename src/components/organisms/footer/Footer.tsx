@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './Footer.styles';
-import Logo from '@/components/atoms/logo/Logo';
+import Logo from '@/components/atoms/logo/logo';
 import TextH3 from '@/components/atoms/text/TextH3';
 import TextNormal from '@/components/atoms/text/TextNormal';
 import TextButton from '@/components/atoms/button/TextButton';
